@@ -1,0 +1,11 @@
+# E:\Rust\Projects\wallet\app\wallet_app\Cargo.toml
+
+[package]
+name = "wallet_app" # Unique name for your main CLI app
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Depend on your utility library
+stellar_wallet_tools_lib = { path = "../../utilities/stellar-wallet-tools" } # Path to the library package
+tokio = { workspace = true } # Inherit from workspace dependencies

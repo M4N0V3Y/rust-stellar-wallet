@@ -1,0 +1,18 @@
+# E:\Rust\Projects\wallet\tests\counter_contract_tests\Cargo.toml
+
+[package]
+name = "counter_contract_tests" # Unique name for your integration test package
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# This is a test-only library, so it doesn't need to be compiled for release.
+# We'll put the test logic here.
+path = "src/lib.rs"
+
+[dev-dependencies]
+# Depend on the smart contract crate to test it
+counter_contract = { path = "../../contracts/counter_contract" }
+soroban-sdk = { workspace = true, features = ["testutils"] }
+stellar_wallet_tools = { path = "../../utilities" } # Added dependency
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] } # Added tokio for async tests

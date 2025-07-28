@@ -1,0 +1,11 @@
+# E:\Rust\Projects\wallet\contracts\counter_contract\Cargo.toml
+[package]
+name = "counter_contract" # Unique name for your smart contract package
+version = "0.0.0"
+edition = "2021"
+publish = false # Prevent accidental publishing to crates.io
+[lib]
+crate-type = ["cdylib"] # Compile as a C-compatible dynamic library (for Wasm)
+doctest = false # Disable doctests for Wasm builds
+[dependencies]
+soroban-sdk = { workspace = true } # Inherit from workspace dependencies

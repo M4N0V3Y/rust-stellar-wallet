@@ -1,0 +1,12 @@
+# E:\Rust\Projects\wallet\utilities\stellar-wallet-tools\Cargo.toml
+[package]
+name = "stellar_wallet_tools_lib" # Unique name for your wallet tools library
+version = "0.1.0"
+edition = "2021"
+[lib]
+name = "stellar_wallet_tools_lib" # Name of your library crate
+path = "src/lib.rs" # Path to your library's source file
+[dependencies]
+stellar-sdk = { workspace = true } # Inherit from workspace dependencies
+rand = { workspace = true } # Inherit from workspace dependencies
+rand_core = { workspace = true } # Inherit from workspace dependencies

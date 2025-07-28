@@ -1,0 +1,25 @@
+# E:\Rust\Projects\wallet\Cargo.toml
+
+[workspace]
+members = [
+    "app/wallet-app", # Corrected to wallet_app
+    "contracts/counter_contract",
+    "utilities", # Corrected to stellar_wallet_tools
+    "tests/wallet_tests", # Added missing tests package
+]
+
+[profile.release]
+opt-level = "s" # Optimize for size
+codegen-units = 1 # Reduce number of codegen units to increase optimizations
+lto = true # Enable Link Time Optimization
+panic = "abort" # Abort on panic
+incremental = false # Disable incremental compilation
+overflow-checks = true # Enable overflow checks
+
+# Define workspace-wide dependencies, useful for shared dependencies
+[workspace.dependencies]
+soroban-sdk = "20.0.0" # Use a specific version for Soroban SDK
+stellar-sdk = "0.12.0" # Use a stable version of the Stellar SDK
+rand = "0.8" # For random number generation
+rand_core = { version = "0.6", features = ["std"] } # Required by stellar-sdk for randomness
+tokio = { version = "1", features = ["full"] } # For async operations in main app
