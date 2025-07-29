@@ -11,8 +11,6 @@ This code is part of the study effort of the Nodus team for HackMeridien 2K25
 - CLI for quick commands
 
 ## ?  Source code filesystem:
-
-![Alt text](./assets/Nodus-Rust-Project-FileSystem.svg)
 <img src="./assets/Nodus-Rust-Project-FileSystem.svg"> 
 
 
@@ -27,7 +25,7 @@ This code is part of the study effort of the Nodus team for HackMeridien 2K25
 #### ?        .. utils.rs
 #### ?     Cargo.toml
 
-###  ?  Stellar wallet – Cli
+###  ?  Stellar wallet ï¿½ Cli
 ###  ?  stellar-wallet-cli/
 #### ?     src/
 #### ?        .. main.rs
@@ -36,7 +34,7 @@ This code is part of the study effort of the Nodus team for HackMeridien 2K25
 
 ## ?  Setup
 
-#### ?  … work in progress
+#### ?  ï¿½ work in progress
 
 ## ?  Build and generate
 ```bash
